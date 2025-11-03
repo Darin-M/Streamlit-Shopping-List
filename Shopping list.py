@@ -7,7 +7,7 @@ def main():
 
     st.write("Welcome to Shopping List!")
 
-    st.dataframe(df, row_height=20)
+    st.dataframe(df, row_height=80)
 
 if __name__ == "__main__":
     main()
