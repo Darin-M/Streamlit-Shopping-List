@@ -4,15 +4,12 @@ from streamlit_gsheets import GSheetsConnection
 
 @st.cache_data
 def main():
-    st.set_page_config(layout="wide")
-                       
-    df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Alusvia", header = 1, usecols="B:J")
-    #conn = st.connection("gsheets", type=GSheetsConnection)
+    st.set_page_config(layout="wide",
+    page_title="Home")
     st.title("Wilder Companion") 
-    #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
-    st.write("Welcome to the Shopping List!")
+    st.write("Welcome to the Wilder Companion app! Here you wll be able to find a range of handy tools for your d&d game to help make things a little bit easier!")
 
-    st.dataframe(df, row_height=80, hide_index=True)
+    st.sidebar.success("Select a page above.")
 
 if __name__ == "__main__":
     main()
