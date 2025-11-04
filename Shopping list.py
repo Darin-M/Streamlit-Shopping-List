@@ -8,7 +8,7 @@ def main():
                        
     df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Alusvia", header = 1, usecols="B:J")
     #conn = st.connection("gsheets", type=GSheetsConnection)
-
+    st.title("Wilder Companion") 
     #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
     st.write("Welcome to the Shopping List!")
 
