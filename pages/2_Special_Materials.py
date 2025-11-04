@@ -9,9 +9,9 @@ def main():
                        
     df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Special Materials", header = 2, usecols="B:I")
     #conn = st.connection("gsheets", type=GSheetsConnection)
-    st.title("Alusvia Catalogue") 
+    st.title("Materials Index") 
     #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
-    st.write("Welcome to the Shopping List!")
+    st.write("Explore the strange and wonderful materials of the world!")
 
     st.dataframe(df, row_height=80, hide_index=True)
 
