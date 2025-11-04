@@ -10,7 +10,7 @@ def main():
     #conn = st.connection("gsheets", type=GSheetsConnection)
 
     #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
-    st.write("Welcome to Shopping List!")
+    st.write("Welcome to the Shopping List!")
 
     st.dataframe(df, row_height=80, hide_index=True)
 
