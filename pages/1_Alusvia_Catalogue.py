@@ -15,7 +15,7 @@ def main():
 
     st.dataframe(df, 
                  row_height=80, 
-                 hide_index=True,
+                 hide_index=False,
                  selection_mode="single-row"
                  )
 
