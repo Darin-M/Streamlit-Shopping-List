@@ -11,10 +11,12 @@ st.title("Alusvia Catalogue")
 #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
 st.write("Welcome to the Shopping List!")
 
-st.dataframe(df, 
+cart = st.dataframe(df, 
             row_height=80, 
             hide_index=True,
             key="Items",
             selection_mode="multi-row",
             on_select="rerun"
             )
+
+cart.selection
