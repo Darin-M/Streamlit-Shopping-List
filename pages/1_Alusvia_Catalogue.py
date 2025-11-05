@@ -15,6 +15,6 @@ st.dataframe(df,
             row_height=80, 
             hide_index=True,
             key="Items",
-            selection_mode="single-row",
+            selection_mode="multi-row",
             on_select="rerun"
             )
