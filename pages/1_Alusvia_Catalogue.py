@@ -13,7 +13,11 @@ def main():
     #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
     st.write("Welcome to the Shopping List!")
 
-    st.dataframe(df, row_height=80, hide_index=True)
+    st.dataframe(df, 
+                 row_height=80, 
+                 hide_index=True,
+                 selection_mode="single-row"
+                 )
 
 if __name__ == "__main__":
     main()
