@@ -20,4 +20,4 @@ cart = st.dataframe(df,
             )
 
 selections = cart.selection["rows"]
-st.write(selections)
+#st.write(selections)
