@@ -18,7 +18,7 @@ def main():
                  hide_index=True,
                  key="Items",
                  selection_mode="single-row",
-                 on_select="ignore"
+                 on_select="rerun"
                  )
 
 if __name__ == "__main__":
