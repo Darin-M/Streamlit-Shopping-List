@@ -19,4 +19,5 @@ cart = st.dataframe(df,
             on_select="rerun"
             )
 
-cart.selection
+selections = cart.selection["rows"]
+st.write(selections)
