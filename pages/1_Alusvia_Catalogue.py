@@ -17,7 +17,8 @@ def main():
                  row_height=80, 
                  hide_index=True,
                  key="Items",
-                 selection_mode="single-row"
+                 selection_mode="single-row",
+                 on_select="ignore"
                  )
 
 if __name__ == "__main__":
