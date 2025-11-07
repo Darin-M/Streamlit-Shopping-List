@@ -7,7 +7,7 @@ def main():
     st.set_page_config(layout="wide",
                        page_title="Special Materials")
                        
-    df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Special Materials", header = 2, usecols="B:I")
+    df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Special Materials", header = 2, usecols="B:K")
     #conn = st.connection("gsheets", type=GSheetsConnection)
     st.title("Materials Index") 
     #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
