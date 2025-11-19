@@ -10,9 +10,10 @@ df = pd.read_excel("Wilder at Catalogue.xlsx", sheet_name="Alusvia", header = 1,
 st.title("Alusvia Catalogue") 
 #df = conn.read(worksheet = "Alusvia",usecols=[1, 9],nrows=3,)    
 st.write("Welcome to the Shopping List!")
+st.link_button("Source", "")
 
 cart = st.dataframe(df, 
-            row_height=80, 
+            row_height=120, 
             hide_index=True,
             key="Items",
             selection_mode="multi-row",
